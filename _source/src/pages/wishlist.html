@@ -1,0 +1,41 @@
+<!--meta {"title":"Wishlist | Nordic Steam Co.","desc":"Products you've saved for later.","page":"wishlist"} -->
+
+<div class="crumb"><div class="wrap"><a href="index.html">Home</a> / Wishlist</div></div>
+
+<div class="wrap">
+  <div class="pagehead"><h1>Your wishlist</h1><p>Saved items stay here across devices when you're signed in, and we'll email you if one of them drops in price.</p></div>
+
+  <div style="padding-bottom:64px">
+    <table class="tbl">
+      <thead><tr><th>Product</th><th>Price</th><th>Stock</th><th></th><th></th></tr></thead>
+      <tbody>
+        <tr>
+          <td><div class="pcell"><img src="assets/img/p-plunge.svg" alt=""><div><b>Glacier Cold Plunge Tub with 1HP Chiller</b><br><span style="color:var(--muted);font-size:12.5px">Added 3 Nov 2026</span></div></div></td>
+          <td><b>$5,299.00</b></td>
+          <td><span style="color:var(--ok);font-weight:700">In stock</span></td>
+          <td><button class="btn" onclick="addToCart('Glacier Cold Plunge Tub', 5299)">Add to cart</button></td>
+          <td><button style="background:none;border:0;color:var(--muted);font-size:19px" onclick="toast('Demo — removed from wishlist')">×</button></td>
+        </tr>
+        <tr>
+          <td><div class="pcell"><img src="assets/img/p-door.svg" alt=""><div><b>Cedar Sauna Door — Full Glass, Bronze Tint</b><br><span style="color:var(--muted);font-size:12.5px">Added 28 Oct 2026</span></div></div></td>
+          <td><b>$1,049.00</b></td>
+          <td><span style="color:var(--ok);font-weight:700">In stock</span></td>
+          <td><button class="btn" onclick="addToCart('Cedar Sauna Door', 1049)">Add to cart</button></td>
+          <td><button style="background:none;border:0;color:var(--muted);font-size:19px" onclick="toast('Demo — removed from wishlist')">×</button></td>
+        </tr>
+        <tr>
+          <td><div class="pcell"><img src="assets/img/p-steam.svg" alt=""><div><b>VaporPro 12kW Commercial Steam Generator</b><br><span style="color:var(--muted);font-size:12.5px">Added 12 Oct 2026</span></div></div></td>
+          <td><s style="color:var(--muted)">$2,599.00</s> <b>$2,299.00</b> <span style="color:var(--ok);font-size:12px;font-weight:700">↓ price dropped</span></td>
+          <td><span style="color:var(--warm);font-weight:700">Low stock — 3 left</span></td>
+          <td><button class="btn" onclick="addToCart('VaporPro 12kW Steam Generator', 2299)">Add to cart</button></td>
+          <td><button style="background:none;border:0;color:var(--muted);font-size:19px" onclick="toast('Demo — removed from wishlist')">×</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="display:flex;gap:10px;margin-top:22px;flex-wrap:wrap">
+      <button class="btn" onclick="toast('Demo — all three added')">Add all to cart</button>
+      <button class="btn btn-ghost" onclick="toast('Demo — the live store emails or copies a share link')">Share wishlist</button>
+      <a class="btn btn-ghost" href="shop.html" style="margin-left:auto">← Continue shopping</a>
+    </div>
+  </div>
+</div>

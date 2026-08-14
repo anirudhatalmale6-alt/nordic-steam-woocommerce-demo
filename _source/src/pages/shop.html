@@ -1,0 +1,75 @@
+<!--meta {"title":"Shop All Saunas, Heaters & Cold Plunge | Nordic Steam Co.","desc":"Browse outdoor and indoor saunas, infrared cabins, heaters, steam generators, doors and accessories.","page":"shop"} -->
+
+<div class="crumb"><div class="wrap"><a href="index.html">Home</a> / Shop</div></div>
+
+<div class="wrap">
+  <div class="pagehead">
+    <h1>All products</h1>
+    <p>Every unit here is one we stock, size and support ourselves. Filter by capacity, heater output or material — or call and describe your room and we'll shortlist it for you.</p>
+  </div>
+
+  <div class="shop">
+    <aside class="filters">
+      <div class="fblock">
+        <h4>Category</h4>
+        <label><input type="checkbox"> Outdoor saunas <span class="count">24</span></label>
+        <label><input type="checkbox"> Indoor sauna kits <span class="count">31</span></label>
+        <label><input type="checkbox"> Infrared saunas <span class="count">18</span></label>
+        <label><input type="checkbox"> Sauna heaters <span class="count">46</span></label>
+        <label><input type="checkbox"> Cold plunge <span class="count">12</span></label>
+        <label><input type="checkbox"> Steam generators <span class="count">15</span></label>
+        <label><input type="checkbox"> Doors &amp; windows <span class="count">22</span></label>
+        <label><input type="checkbox"> Accessories <span class="count">87</span></label>
+      </div>
+      <div class="fblock">
+        <h4>Capacity</h4>
+        <label><input type="checkbox"> 1–2 person <span class="count">29</span></label>
+        <label><input type="checkbox"> 3–4 person <span class="count">41</span></label>
+        <label><input type="checkbox"> 5–6 person <span class="count">33</span></label>
+        <label><input type="checkbox"> 7+ person <span class="count">14</span></label>
+      </div>
+      <div class="fblock">
+        <h4>Heater output</h4>
+        <label><input type="checkbox"> Up to 6 kW <span class="count">18</span></label>
+        <label><input type="checkbox"> 6–9 kW <span class="count">26</span></label>
+        <label><input type="checkbox"> 9–12 kW <span class="count">15</span></label>
+        <label><input type="checkbox"> 12 kW+ <span class="count">7</span></label>
+      </div>
+      <div class="fblock">
+        <h4>Price</h4>
+        <label><input type="checkbox"> Under $500 <span class="count">62</span></label>
+        <label><input type="checkbox"> $500 – $2,000 <span class="count">48</span></label>
+        <label><input type="checkbox"> $2,000 – $5,000 <span class="count">54</span></label>
+        <label><input type="checkbox"> $5,000+ <span class="count">31</span></label>
+      </div>
+      <div class="fblock">
+        <h4>Customer rating</h4>
+        <label><input type="checkbox"> {{STARS4}} &amp; up <span class="count">171</span></label>
+        <label><input type="checkbox"> {{STARS3}} &amp; up <span class="count">193</span></label>
+      </div>
+      <div class="fblock">
+        <button class="btn btn-block" onclick="toast('Demo — filters are wired to WooCommerce product attributes in the live build')">Apply filters</button>
+      </div>
+    </aside>
+
+    <div>
+      <div class="shopbar">
+        <span>Showing 1–8 of 195 products</span>
+        <select onchange="toast('Demo — sorting is handled by WooCommerce')">
+          <option>Sort by: popularity</option>
+          <option>Sort by: average rating</option>
+          <option>Sort by: newest</option>
+          <option>Sort by: price low to high</option>
+          <option>Sort by: price high to low</option>
+        </select>
+      </div>
+      {{GRID_ALL}}
+      <div style="display:flex;gap:8px;justify-content:center;margin-top:28px">
+        <button class="btn" onclick="toast('Demo — page 1 of 25')">1</button>
+        <button class="btn btn-ghost" onclick="toast('Demo pagination')">2</button>
+        <button class="btn btn-ghost" onclick="toast('Demo pagination')">3</button>
+        <button class="btn btn-ghost" onclick="toast('Demo pagination')">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>

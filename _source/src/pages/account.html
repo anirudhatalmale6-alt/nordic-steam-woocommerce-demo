@@ -1,0 +1,66 @@
+<!--meta {"title":"My Account | Nordic Steam Co.","desc":"Sign in to track orders, manage addresses and review your purchases.","page":"account"} -->
+
+<div class="crumb"><div class="wrap"><a href="index.html">Home</a> / My account</div></div>
+
+<div class="wrap">
+  <div class="pagehead"><h1>My account</h1><p>Orders, addresses, downloads and your published reviews — all in one place.</p></div>
+
+  <div class="twocol">
+    <div>
+      <div class="panel" style="margin-bottom:20px">
+        <h3>Order history</h3>
+        <table class="tbl">
+          <thead><tr><th>Order</th><th>Date</th><th>Status</th><th>Total</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><b>#NS-10428</b></td><td>2 Nov 2026</td><td><span style="color:var(--ok);font-weight:700">Delivered</span></td><td>$6,688.00</td><td><a href="product.html?p=aurora-barrel-6" style="color:var(--accent);text-decoration:underline">Leave a review</a></td></tr>
+            <tr><td><b>#NS-10102</b></td><td>18 Sep 2026</td><td><span style="color:var(--warm);font-weight:700">In transit</span></td><td>$1,149.00</td><td><a href="#" onclick="toast('Demo — tracking opens the carrier page');return false" style="color:var(--accent);text-decoration:underline">Track</a></td></tr>
+            <tr><td><b>#NS-09877</b></td><td>4 Aug 2026</td><td><span style="color:var(--ok);font-weight:700">Delivered</span></td><td>$189.00</td><td><span style="color:var(--muted)">Reviewed ★★★★★</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h3>My reviews</h3>
+        <p style="color:var(--muted);font-size:13.5px">Reviews you've published, and products still waiting for one. Customers get an automatic review-request email 14 days after delivery.</p>
+        <div class="review" style="border-bottom:1px solid var(--line)">
+          <div class="avatar">YO</div>
+          <div>
+            <div class="who"><b>Nordic Accessory Kit</b><span class="when">Published 20 Aug 2026</span></div>
+            {{STARS5}}
+            <h4>Solid bucket, the timer is the useful bit</h4>
+            <p>Cedar bucket hasn't leaked once. The sand timer is what I actually use every session.</p>
+            <div class="foot"><button onclick="toast('Demo — opens the edit form')">Edit</button><button onclick="toast('Demo — deletes your review')">Delete</button></div>
+          </div>
+        </div>
+        <div style="padding:18px 0;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+          <img src="assets/img/p-heater.svg" alt="" style="width:56px;height:56px;object-fit:contain">
+          <div style="flex:1"><b>Kelvin 9kW Electric Sauna Heater</b><br><span style="color:var(--muted);font-size:13px">Delivered 26 Sep — awaiting your review</span></div>
+          <a class="btn" href="product.html?p=kelvin-9kw-heater#reviews">Write a review</a>
+        </div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="panel" style="margin-bottom:20px">
+        <h3>Sign in</h3>
+        <div class="field"><label>Email or username</label><input placeholder="you@example.com"></div>
+        <div class="field"><label>Password</label><input type="password" placeholder="••••••••"></div>
+        <button class="btn btn-block" onclick="toast('Demo — accounts are WooCommerce customer accounts in the live store')">Sign in</button>
+        <p style="font-size:13px;margin:14px 0 0"><a href="#" onclick="toast('Demo — password reset email');return false" style="text-decoration:underline">Lost your password?</a></p>
+      </div>
+      <div class="panel">
+        <h3>Account menu</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;gap:11px;font-size:14px">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Addresses</a></li>
+          <li><a href="#">Payment methods</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="#">My reviews</a></li>
+          <li><a href="#">Account details</a></li>
+          <li><a href="#">Log out</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>

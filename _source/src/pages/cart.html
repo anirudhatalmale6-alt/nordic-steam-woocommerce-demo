@@ -1,0 +1,51 @@
+<!--meta {"title":"Shopping Cart | Nordic Steam Co.","desc":"Review your cart.","page":"cart"} -->
+
+<div class="crumb"><div class="wrap"><a href="index.html">Home</a> / Cart</div></div>
+
+<div class="wrap">
+  <div class="pagehead"><h1>Your cart</h1></div>
+
+  <div class="cart-layout">
+    <div>
+      <table class="tbl">
+        <thead><tr><th>Product</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="pcell"><img src="assets/img/p-barrel.svg" alt=""><div><b>Aurora 6-Person Outdoor Barrel Sauna</b><br><span style="color:var(--muted);font-size:12.5px">SKU NS-AUR-6C · Red cedar · 8kW heater</span></div></div></td>
+            <td>$6,499.00</td>
+            <td><div class="qty"><button type="button" onclick="bump(this,-1)">−</button><input value="1"><button type="button" onclick="bump(this,1)">+</button></div></td>
+            <td><b>$6,499.00</b></td>
+            <td><button style="background:none;border:0;color:var(--muted);font-size:19px" onclick="toast('Demo — item removal is handled by WooCommerce')">×</button></td>
+          </tr>
+          <tr>
+            <td><div class="pcell"><img src="assets/img/p-kit.svg" alt=""><div><b>Nordic Accessory Kit</b><br><span style="color:var(--muted);font-size:12.5px">SKU NS-KIT-01 · Bucket, ladle, thermometer, timer</span></div></div></td>
+            <td><s style="color:var(--muted)">$229.00</s> $189.00</td>
+            <td><div class="qty"><button type="button" onclick="bump(this,-1)">−</button><input value="1"><button type="button" onclick="bump(this,1)">+</button></div></td>
+            <td><b>$189.00</b></td>
+            <td><button style="background:none;border:0;color:var(--muted);font-size:19px" onclick="toast('Demo — item removal is handled by WooCommerce')">×</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="display:flex;gap:10px;margin-top:22px;flex-wrap:wrap">
+        <input placeholder="Coupon code" style="border:1px solid var(--line);border-radius:4px;padding:12px 14px;font:inherit;min-width:220px">
+        <button class="btn btn-ghost" onclick="toast('Demo — coupons are configured in WooCommerce → Marketing')">Apply coupon</button>
+        <a class="btn btn-ghost" href="shop.html" style="margin-left:auto">← Continue shopping</a>
+      </div>
+    </div>
+
+    <aside class="panel">
+      <h3>Cart totals</h3>
+      <div class="totrow"><span>Subtotal</span><b>$6,688.00</b></div>
+      <div class="totrow"><span>Shipping</span><b style="color:var(--ok)">Free (over $2,500)</b></div>
+      <div class="totrow"><span>Estimated tax (OR)</span><b>$0.00</b></div>
+      <div class="totrow grand"><span>Total</span><span>$6,688.00</span></div>
+      <a class="btn btn-lg btn-block" href="checkout.html" style="margin-top:16px">Proceed to checkout</a>
+      <div style="margin-top:16px;font-size:12.5px;color:var(--muted);display:grid;gap:7px">
+        <div>✓ Secure SSL checkout</div>
+        <div>✓ 30-day returns</div>
+        <div>✓ Freight booked within 24 hours</div>
+      </div>
+    </aside>
+  </div>
+</div>

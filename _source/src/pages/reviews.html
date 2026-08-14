@@ -1,0 +1,123 @@
+<!--meta {"title":"Customer Reviews | Nordic Steam Co.","desc":"Every published review across the store, aggregated by rating, product and photo.","page":"reviews"} -->
+
+<div class="crumb"><div class="wrap"><a href="index.html">Home</a> / Customer reviews</div></div>
+
+<div class="wrap">
+  <div class="pagehead">
+    <h1>Customer reviews</h1>
+    <p>Every published review across the store, in one place. Nothing is filtered out for being critical — we only remove spam and abuse.</p>
+  </div>
+
+  <div style="padding-bottom:64px">
+    <div class="rv-summary">
+      <div class="rv-score">
+        <div class="num">4.8</div>
+        {{STARS48LG}}
+        <div class="of">1,204 reviews across 195 products</div>
+      </div>
+      <div class="rv-bars">
+        <div class="rv-bar"><span class="lab">5 stars</span><span class="track"><span class="fill" style="width:81%"></span></span><span class="n">975</span></div>
+        <div class="rv-bar"><span class="lab">4 stars</span><span class="track"><span class="fill" style="width:13%"></span></span><span class="n">157</span></div>
+        <div class="rv-bar"><span class="lab">3 stars</span><span class="track"><span class="fill" style="width:4%"></span></span><span class="n">48</span></div>
+        <div class="rv-bar"><span class="lab">2 stars</span><span class="track"><span class="fill" style="width:1%"></span></span><span class="n">15</span></div>
+        <div class="rv-bar"><span class="lab">1 star</span><span class="track"><span class="fill" style="width:1%"></span></span><span class="n">9</span></div>
+      </div>
+      <div class="rv-cta">
+        <a class="btn" href="account.html">Review a purchase</a>
+        <small>94% of buyers would recommend us</small>
+      </div>
+    </div>
+
+    <div class="agg-strip" style="margin-top:20px">
+      <div class="agg"><div class="num">98%</div><small>Reviews from verified buyers</small></div>
+      <div class="agg"><div class="num">71%</div><small>Include customer photos</small></div>
+      <div class="agg"><div class="num">14 days</div><small>Average time from delivery to review</small></div>
+      <div class="agg"><div class="num">100%</div><small>Critical reviews answered by us</small></div>
+    </div>
+
+    <div class="rv-toolbar">
+      <button class="chip on" onclick="filterReviews(this,'all')">All reviews</button>
+      <button class="chip" onclick="filterReviews(this,5)">5 star</button>
+      <button class="chip" onclick="filterReviews(this,4)">4 star</button>
+      <button class="chip" onclick="filterReviews(this,3)">3 star</button>
+      <button class="chip" onclick="filterReviews(this,'photo')">With photos</button>
+      <select onchange="sortReviews(this)" aria-label="Sort reviews">
+        <option value="new">Newest first</option>
+        <option value="helpful">Most helpful</option>
+        <option value="high">Highest rated</option>
+        <option value="low">Lowest rated</option>
+      </select>
+    </div>
+
+    <div id="rvlist">
+      <article class="review" data-stars="5" data-photos="1" data-helpful="24" data-age="1">
+        <div class="avatar">MR</div>
+        <div>
+          <div class="who"><b>Marcus R.</b><span class="vbadge">✓ Verified buyer</span><span class="when">2 weeks ago</span></div>
+          {{STARS5}}
+          <h4>Four hours to build, worth every minute</h4>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:6px">On <a href="product.html?p=aurora-barrel-6" style="color:var(--accent);text-decoration:underline">Aurora 6-Person Outdoor Barrel Sauna</a></p>
+          <p>Second sauna I've owned and the difference in build quality is obvious. Staves were dead straight, every hole lined up, and the tension bands pulled it tight first try.</p>
+          <div class="photos"><img src="assets/img/rv1.svg" alt=""><img src="assets/img/rv2.svg" alt=""></div>
+          <div class="foot"><button onclick="markHelpful(this)">👍 Helpful (<b>24</b>)</button></div>
+        </div>
+      </article>
+
+      <article class="review" data-stars="5" data-photos="0" data-helpful="19" data-age="2">
+        <div class="avatar">AF</div>
+        <div>
+          <div class="who"><b>Alicia F.</b><span class="vbadge">✓ Verified buyer</span><span class="when">3 weeks ago</span></div>
+          {{STARS5}}
+          <h4>The plunge holds 39 °F without breaking a sweat</h4>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:6px">On <a href="product.html?p=glacier-plunge" style="color:var(--accent);text-decoration:underline">Glacier Cold Plunge Tub</a></p>
+          <p>Runs in an uninsulated garage in Arizona and still holds temperature. Filtration keeps the water clear for about three weeks between changes.</p>
+          <div class="foot"><button onclick="markHelpful(this)">👍 Helpful (<b>19</b>)</button></div>
+        </div>
+      </article>
+
+      <article class="review" data-stars="4" data-photos="1" data-helpful="15" data-age="3">
+        <div class="avatar">DP</div>
+        <div>
+          <div class="who"><b>Dan P.</b><span class="vbadge">✓ Verified buyer</span><span class="when">1 month ago</span></div>
+          {{STARS4}}
+          <h4>Great sauna, plan your pad properly</h4>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:6px">On <a href="product.html?p=aurora-barrel-6" style="color:var(--accent);text-decoration:underline">Aurora 6-Person Outdoor Barrel Sauna</a></p>
+          <p>Docking a star for me, not them — I poured a slab 3" too short. The clearance drawing is accurate, I just measured off the wrong edge.</p>
+          <div class="photos"><img src="assets/img/rv4.svg" alt=""></div>
+          <div class="foot"><button onclick="markHelpful(this)">👍 Helpful (<b>15</b>)</button></div>
+          <div class="reply"><b>Nordic Steam Co. replied</b><p>Thanks Dan — we've moved the pad dimension onto page 1 of the drawing.</p></div>
+        </div>
+      </article>
+
+      <article class="review" data-stars="3" data-photos="0" data-helpful="11" data-age="4">
+        <div class="avatar">TW</div>
+        <div>
+          <div class="who"><b>Tom W.</b><span class="vbadge">✓ Verified buyer</span><span class="when">2 months ago</span></div>
+          {{STARS3}}
+          <h4>Freight carrier was the weak link</h4>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:6px">On <a href="product.html?p=aurora-barrel-6" style="color:var(--accent);text-decoration:underline">Aurora 6-Person Outdoor Barrel Sauna</a></p>
+          <p>Product is 5 stars, delivery was not. Carrier missed the booked window twice. Nordic Steam credited the lift-gate fee without me pushing.</p>
+          <div class="foot"><button onclick="markHelpful(this)">👍 Helpful (<b>11</b>)</button></div>
+          <div class="reply"><b>Nordic Steam Co. replied</b><p>Sorry Tom — we've changed carriers for Pacific Northwest deliveries since.</p></div>
+        </div>
+      </article>
+
+      <article class="review" data-stars="5" data-photos="1" data-helpful="9" data-age="5">
+        <div class="avatar">HN</div>
+        <div>
+          <div class="who"><b>Henrik N.</b><span class="vbadge">✓ Verified buyer</span><span class="when">2 months ago</span></div>
+          {{STARS5}}
+          <h4>Heater is the quietest I've used</h4>
+          <p style="color:var(--muted);font-size:13px;margin-bottom:6px">On <a href="product.html?p=kelvin-9kw-heater" style="color:var(--accent);text-decoration:underline">Kelvin 9kW Electric Sauna Heater</a></p>
+          <p>No relay clicking, no element hum. Stone tray takes a proper 90 lb load so the steam burst lasts.</p>
+          <div class="photos"><img src="assets/img/rv3.svg" alt=""></div>
+          <div class="foot"><button onclick="markHelpful(this)">👍 Helpful (<b>9</b>)</button></div>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:26px">
+      <button class="btn btn-ghost" onclick="toast('Demo — the live page loads 20 at a time')">Load more reviews</button>
+    </div>
+  </div>
+</div>

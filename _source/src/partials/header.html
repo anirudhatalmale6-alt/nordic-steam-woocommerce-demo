@@ -1,0 +1,87 @@
+<div class="demoflag">
+  <b>DESIGN DEMO</b> — “Nordic Steam Co.” is a placeholder brand. Logo, colours, name, products, prices and contact details are all swapped for yours in the real build.
+</div>
+
+<div class="promobar">
+  <div class="wrap">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+    <span>Free curbside delivery on all orders over $2,500</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="index.html">
+      <img class="mark" src="assets/img/logo.svg" alt="">
+      <span class="txt"><b>Nordic Steam</b><span>Sauna &amp; Cold</span></span>
+    </a>
+
+    <form class="searchbar" onsubmit="return demoSearch(event)">
+      <input type="search" placeholder="Search saunas, heaters, plunge tubs…" aria-label="Search products">
+      <select aria-label="Category">
+        <option>All categories</option>
+        <option>Saunas</option><option>Sauna Heaters</option><option>Cold Plunge</option>
+        <option>Steam</option><option>Doors &amp; Windows</option><option>Accessories</option>
+      </select>
+      <button type="submit" aria-label="Search">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+    </form>
+
+    <div class="hsupport">
+      <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <div><small>Mon–Sat support</small><b>+1 (555) 014-7788</b></div>
+    </div>
+
+    <a class="hcart" href="cart.html">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M1 1h3l2.7 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+      <div><span class="amt" data-cart-total>$0.00</span><span class="cnt"><span data-cart-count>0</span> items</span></div>
+    </a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="wrap">
+    <div class="browse-wrap">
+      <button class="browse" onclick="this.parentNode.classList.toggle('open')">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        Browse categories
+        <svg class="caret" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="browse-menu">
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="12" rx="2"/><path d="M7 7V4h10v3"/></svg> Outdoor Saunas</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-7 9 7v10H3z"/></svg> Indoor Sauna Kits</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8c0 5 14 5 14 0"/></svg> Infrared Saunas</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 20c0-6 8-6 8-12M6 12h12"/></svg> Sauna Heaters</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h16v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M4 9c3-2 13-2 16 0"/></svg> Cold Plunge</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M9 9V5h6v4"/></svg> Steam Generators</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M15 12h.01"/></svg> Doors &amp; Windows</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8h12l-1.5 12h-9z"/><path d="M7 8a5 5 0 0 1 10 0"/></svg> Accessories</a>
+        <a href="shop.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12l-8 8-9-9V3h8z"/><path d="M7.5 7.5h.01"/></svg> On Sale</a>
+      </div>
+    </div>
+
+    <button class="burger" onclick="document.querySelector('.mainmenu').classList.toggle('open')" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+
+    <div class="mainmenu">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="shop.html" data-nav="shop">Shop</a>
+      <a href="about.html" data-nav="about">About us</a>
+      <a href="faq.html" data-nav="faq">FAQ</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+    </div>
+
+    <div class="navtools">
+      <a class="navtool" href="wishlist.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 5.6a5.2 5.2 0 0 0-7.4 0L12 7l-1.4-1.4a5.2 5.2 0 1 0-7.4 7.4L12 21.4l8.8-8.4a5.2 5.2 0 0 0 0-7.4z"/></svg>
+        <span class="bdg" data-wish-count>0</span><span>Wishlist</span>
+      </a>
+      <a class="navtool" href="account.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        <span>My account</span>
+      </a>
+    </div>
+  </div>
+</nav>

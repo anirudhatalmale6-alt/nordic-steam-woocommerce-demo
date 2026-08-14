@@ -1,0 +1,63 @@
+<!--meta {"title":"Checkout | Nordic Steam Co.","desc":"Secure checkout.","page":"cart"} -->
+
+<div class="crumb"><div class="wrap"><a href="index.html">Home</a> / <a href="cart.html">Cart</a> / Checkout</div></div>
+
+<div class="wrap">
+  <div class="pagehead"><h1>Checkout</h1><p>Demo only — no payment is taken and nothing is submitted anywhere.</p></div>
+
+  <form class="chk" onsubmit="event.preventDefault();toast('Demo checkout — the live store processes this through Stripe or PayPal');">
+    <div>
+      <div class="panel" style="margin-bottom:20px">
+        <h3>Contact</h3>
+        <div class="rowset" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div class="field"><label>Email</label><input type="email" placeholder="you@example.com" required></div>
+          <div class="field"><label>Phone</label><input placeholder="For the freight carrier" required></div>
+        </div>
+        <label style="display:flex;gap:9px;font-size:13.5px;color:var(--ink-2)"><input type="checkbox" style="accent-color:var(--accent)"> Create an account to track this order</label>
+      </div>
+
+      <div class="panel" style="margin-bottom:20px">
+        <h3>Delivery address</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div class="field"><label>First name</label><input required></div>
+          <div class="field"><label>Last name</label><input required></div>
+        </div>
+        <div class="field"><label>Street address</label><input required></div>
+        <div class="field"><label>Apartment, suite (optional)</label><input></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr .8fr;gap:16px">
+          <div class="field"><label>City</label><input required></div>
+          <div class="field"><label>State</label><select><option>Oregon</option><option>Washington</option><option>California</option><option>Other</option></select></div>
+          <div class="field"><label>ZIP</label><input required></div>
+        </div>
+        <div class="field"><label>Delivery notes</label><textarea placeholder="Gate codes, driveway access, best time for a 4-hour freight window" style="min-height:80px"></textarea></div>
+      </div>
+
+      <div class="panel" style="margin-bottom:20px">
+        <h3>Shipping method</h3>
+        <div class="paymethod on"><input type="radio" name="ship" checked><div><b>Free curbside freight</b><br><span style="color:var(--muted);font-size:13px">5–7 business days · lift-gate unload at the curb · included on orders over $2,500</span></div></div>
+        <div class="paymethod"><input type="radio" name="ship"><div><b>Threshold delivery — $189</b><br><span style="color:var(--muted);font-size:13px">Carrier moves the pallet to your garage or first dry space</span></div></div>
+        <div class="paymethod"><input type="radio" name="ship"><div><b>White glove + assembly — $749</b><br><span style="color:var(--muted);font-size:13px">Placed, assembled and packaging removed. Electrical connection not included.</span></div></div>
+      </div>
+
+      <div class="panel">
+        <h3>Payment</h3>
+        <div class="paymethod on"><input type="radio" name="pay" checked><div><b>Credit / debit card</b><br><span style="color:var(--muted);font-size:13px">Visa, Mastercard, Amex — processed by Stripe. Card details never touch our server.</span></div></div>
+        <div class="paymethod"><input type="radio" name="pay"><div><b>PayPal</b><br><span style="color:var(--muted);font-size:13px">You'll be redirected to approve the payment</span></div></div>
+        <div class="paymethod"><input type="radio" name="pay"><div><b>Klarna — 4 interest-free payments</b><br><span style="color:var(--muted);font-size:13px">Subject to eligibility</span></div></div>
+        <div class="paymethod"><input type="radio" name="pay"><div><b>Bank transfer (ACH)</b><br><span style="color:var(--muted);font-size:13px">Order ships once funds clear, typically 2 business days</span></div></div>
+      </div>
+    </div>
+
+    <aside class="panel" style="position:sticky;top:16px">
+      <h3>Order summary</h3>
+      <div class="pcell" style="margin-bottom:14px"><img src="assets/img/p-barrel.svg" alt="" style="width:52px;height:52px;object-fit:contain;border:1px solid var(--line);border-radius:4px;padding:5px"><div style="font-size:13.5px"><b>Aurora 6-Person Barrel Sauna</b><br><span style="color:var(--muted)">Qty 1 · $6,499.00</span></div></div>
+      <div class="pcell" style="margin-bottom:16px"><img src="assets/img/p-kit.svg" alt="" style="width:52px;height:52px;object-fit:contain;border:1px solid var(--line);border-radius:4px;padding:5px"><div style="font-size:13.5px"><b>Nordic Accessory Kit</b><br><span style="color:var(--muted)">Qty 1 · $189.00</span></div></div>
+      <div class="totrow"><span>Subtotal</span><b>$6,688.00</b></div>
+      <div class="totrow"><span>Shipping</span><b style="color:var(--ok)">Free</b></div>
+      <div class="totrow"><span>Tax</span><b>$0.00</b></div>
+      <div class="totrow grand"><span>Total</span><span>$6,688.00</span></div>
+      <button class="btn btn-lg btn-block" type="submit" style="margin-top:16px">Place order</button>
+      <p style="font-size:12px;color:var(--muted);margin-top:12px">By placing this order you agree to our <a href="terms.html" style="text-decoration:underline">terms</a>, <a href="returns.html" style="text-decoration:underline">returns policy</a> and <a href="privacy.html" style="text-decoration:underline">privacy policy</a>.</p>
+    </aside>
+  </form>
+</div>
